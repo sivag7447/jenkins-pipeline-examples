@@ -7,20 +7,20 @@ pipeline {
 		   
 		    stages  {
 			
-			          stage('clean') {
+			          stage('mvn clean') {
 			
 			        steps {
 					       echo 'world'
                           }					
 					}
 					
-					stage('validate'){
+					stage('mvn validate'){
 					        
 							steps {
 					                echo 'hello world'
 					              }
 					}
-					stage('compile'){
+					stage('mvn compile'){
 					        
 							steps {
 					                echo 'hello world'
